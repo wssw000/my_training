@@ -8,9 +8,10 @@ for i in numbers:
         is_prime = True
         for j in range(2, i - 1):
             if i % j == 0:
-                dividers += 1
+                is_prime = False
+                break
 
-        if dividers == 0:
+        if is_prime:
             primes.append(i)
         else:
             not_primes.append(i)
