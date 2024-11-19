@@ -4,7 +4,6 @@ not_primes = []
 
 for i in numbers:
     if i > 1:
-        dividers = 0 #счетчик делителей без остатка
         is_prime = True
         for j in range(2, i - 1):
             if i % j == 0:
